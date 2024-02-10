@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            background-color: #d401f0;
+        }
+
+        .row {
+            padding: 50px 50px 0px 50px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(33.33%, 1fr));
+        }
+
+        .item {
+            border: 2px solid #e2a1eb;
+            grid-column: span 1;
+            height: 50px;
+        }
+
+        .item:first-child {
+            margin-right: 50px;
+        }
+
+        .item:last-child {
+            margin-left: 50px;
+        }
+
+        .tooltip {
+            position: relative;
+            display: inline-block;
+        }
+
+        .tooltip .tooltiptext {
+            /*visibility: hidden;*/
+            border: 1px solid #e2a1eb;
+            display: none;
+            width: 135px;
+            height: 35px;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px 0;
+            background-color: #9001aa;
+
+            /* Position the tooltip */
+            position: absolute;
+            z-index: 1;
+            bottom: 65%;
+            left: 78%;
+            
+        }
+
+        .tooltip:hover .tooltiptext {
+            /*visibility: visible;*/
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="row">
+        <div class="item tooltip">
+            Header 1
+            <div class="tooltiptext">
+                Tooltip 1
+            </div>
+        </div>
+        <div class="item tooltip">
+            Header 2
+            <div class="tooltiptext">
+                Tooltip 2
+            </div>
+        </div>
+        <div class="item tooltip">
+            Header 3
+            <div class="tooltiptext">
+                Tooltip 3
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="item tooltip">
+            Row 1
+            <div class="tooltiptext">
+                Tooltip 4
+            </div>
+        </div>
+        <div class="item tooltip">
+            Row 1
+            <div class="tooltiptext">
+                Tooltip 5
+            </div>
+        </div>
+        <div class="item tooltip">
+            Row 1
+            <div class="tooltiptext">
+                Tooltip 6
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="item tooltip">
+            Row 2
+            <div class="tooltiptext">
+                Tooltip 7
+            </div>
+        </div>
+        <div class="item tooltip">
+            Row 2
+            <div class="tooltiptext">
+                Tooltip 8
+            </div>
+        </div>
+        <div class="item tooltip">
+            Row 2
+            <div class="tooltiptext">
+                Tooltip 9
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="item tooltip">
+            Row 3
+            <div class="tooltiptext">
+                Tooltip 10
+            </div>
+        </div>
+        <div class="item tooltip">
+            Row 3
+            <div class="tooltiptext">
+                Tooltip 11
+            </div>
+        </div>
+        <div class="item tooltip">
+            Row 3
+            <div class="tooltiptext">
+                Tooltip 12
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
